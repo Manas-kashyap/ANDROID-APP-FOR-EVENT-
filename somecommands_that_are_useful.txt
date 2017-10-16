@@ -1,0 +1,5 @@
+ /* setTitle("HOME");
+            home home=new home();
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            
+fragmentManager.beginTransaction().replace(R.id.home,home).commit();*/

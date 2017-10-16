@@ -14,22 +14,21 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/talneo"
-        android:label="TALNEO"
+        android:label="INFINITI"
         android:roundIcon="@mipmap/talneo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="INFINITY"
+            android:label="INFINITI v1.0"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"
+                   />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CREW"
-            android:label="CREW"></activity>
     </application>
 
 </manifest>

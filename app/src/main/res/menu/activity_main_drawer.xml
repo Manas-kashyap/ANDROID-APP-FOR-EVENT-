@@ -11,13 +11,19 @@ android:icon="@drawable/ic_home_black_24dp"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Gallery" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_person_black_24dp"
-            android:title="CREW" />
+            android:id="@+id/Schedule"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Scheduler"/>
+        <item
+            android:id="@+id/map"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="MAP" />
+
+
         <item
             android:id="@+id/nav_manage"
-android:icon="@mipmap/tp"
-            android:title="Ticket price" />
+android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Buy tickets" />
     </group>
 
     <item android:title="COMMUNICATE">
@@ -26,12 +32,15 @@ android:icon="@mipmap/tp"
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_question_answer_black_24dp"
                 android:title="FAQ" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_supervisor_account_black_24dp"
+                android:title="CREW" />
 
             <item
-                android:id="@+id/WEB"
-                android:icon="@drawable/ic_language_black_24dp"
-                android:title="Visit website" />
-
+                android:id="@+id/main"
+                android:icon="@drawable/ic_mail_black_24dp"
+                android:title="Mail" />
         </menu>
     </item>
 
