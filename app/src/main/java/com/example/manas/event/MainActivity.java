@@ -1,5 +1,6 @@
 package com.example.manas.event;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -87,11 +88,40 @@ DrawerLayout drawerLayout;
 
         } else if (id == R.id.nav_slideshow) {
 
+startActivity(new Intent(this,CREW.class));
 
 
 
+        }else if (id == R.id.Schedule)
+        {
+            startActivity(new Intent(this,schedule.class));
+        }
+        else if (id==R.id.map)
+        {
 
-        } else if (id == R.id.nav_manage) {
+            String uri = "http://maps.google.com/maps?daddr=" + 28.5828 + "," +  77.2344 + " (" + "JLN stadium" + ")";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+            intent.setPackage("com.google.android.apps.maps");
+            try
+            {
+                startActivity(intent);
+            }
+            catch(ActivityNotFoundException ex)
+            {
+                try
+                {
+                    Intent unrestrictedIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                    startActivity(unrestrictedIntent);
+                }
+                catch(ActivityNotFoundException innerEx)
+                {
+                    Toast.makeText(this, "Please install a maps application", Toast.LENGTH_LONG).show();
+                }
+            }
+
+        }
+
+        else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
 

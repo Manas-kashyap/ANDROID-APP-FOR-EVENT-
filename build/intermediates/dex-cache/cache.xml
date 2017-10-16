@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/manas/.android/build-cache/880dbe2dfbbf74ba858c7c39032562407c94d873/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="/home/manas/MyApplication/app/build/intermediates/pre-dexed/debug/classes_abae7041b98a4c5d2de8ee009adb134cdf487751.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/manas/.android/build-cache/cc70d44fe08ebe3726d198d6e36eb297e89eb95c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/home/manas/MyApplication/app/build/intermediates/pre-dexed/debug/classes_e028fe2ba260c7103becb7e73933b3d65c147149.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/manas/.android/build-cache/650375bd3261eaf16b8ee25b6650b71cf807b55e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/home/manas/MyApplication/app/build/intermediates/pre-dexed/debug/classes_3a5acc8bf9ab42839ca6453e39c06ba9da0ea535.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/manas/.android/build-cache/1d9d888b5171c136059f6cd0f94cdfd017184a0e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/home/manas/MyApplication/app/build/intermediates/pre-dexed/debug/classes_adf59a4d71d836b75701344eaad4f96011cc7325.jar" />
+    </item>
+
+</items>

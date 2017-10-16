@@ -24,6 +24,11 @@ android:icon="@drawable/ic_home_black_24dp"
             android:id="@+id/nav_manage"
 android:icon="@drawable/ic_payment_black_24dp"
             android:title="Buy tickets" />
+        <item
+            android:id="@+id/partner"
+            android:icon="@mipmap/handshake"
+            android:title="Partner" />
+
     </group>
 
     <item android:title="COMMUNICATE">
