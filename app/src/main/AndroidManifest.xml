@@ -10,14 +10,13 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/looksksks"
         android:label="INFINITI"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/looksksks"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -32,15 +31,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".schedule"
-            android:label="SCHEDULE"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".CREW"
             android:label="CREW"
             android:parentActivityName=".MainActivity" />
-
-
+        <activity
+            android:name=".faq"
+            android:label="FAQ"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".gallery"
+            android:label="Gallery"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

@@ -14,18 +14,34 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 DrawerLayout drawerLayout;
     Toolbar toolbar;
+    Animation fade_in, fade_out;
+    ViewFlipper viewFlipper;
     ActionBarDrawerToggle actionBarDrawerToggle;
     FragmentTransaction fragmentTransaction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        viewFlipper = (ViewFlipper) this.findViewById(R.id.bckgrndViewFlipper1);
+        fade_in = AnimationUtils.loadAnimation(this,
+                android.R.anim.fade_in);
+        fade_out = AnimationUtils.loadAnimation(this,
+                android.R.anim.fade_out);
+        viewFlipper.setInAnimation(fade_in);
+        viewFlipper.setOutAnimation(fade_out);
+//sets auto flipping
+        viewFlipper.setAutoStart(true);
+        viewFlipper.setFlipInterval(2500);
+        viewFlipper.startFlipping();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -85,6 +101,7 @@ DrawerLayout drawerLayout;
             startActivity(new Intent(this, MainActivity.class));
 
         } else if (id == R.id.nav_gallery) {
+            startActivity(new Intent(this,gallery.class));
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -94,7 +111,7 @@ startActivity(new Intent(this,CREW.class));
 
         }else if (id == R.id.Schedule)
         {
-            startActivity(new Intent(this,schedule.class));
+
         }
         else if (id==R.id.map)
         {
@@ -125,10 +142,14 @@ startActivity(new Intent(this,CREW.class));
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.main) {
+            startActivity(new Intent(this,faq.class));
+        }
+
+        else if (id == R.id.main) {
 
                     sendEmail();
                 }
+
 
 
 
